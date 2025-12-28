@@ -1,0 +1,620 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+#container {
+    width: 100%;
+}
+
+.layout {
+    max-width: 105rem;
+    height: 700px;
+    background-image: url('images/netflixbackground.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    margin: auto;
+
+}
+
+.image {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 700px;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    height: auto;
+}
+
+/* Navigation section */
+header {
+    margin-top: 20px;
+    width: 100%;
+    height: 60px;
+    display: flex;
+}
+
+header ul {
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    width: 100%;
+    position: static;
+    display: flex;
+    justify-content: space-around;
+    gap: 34%;
+}
+
+/* Netflix logo */
+li img {
+    align-items: center;
+    height: 55px;
+}
+
+/* Sign in button */
+li a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+header button {
+    padding: 8px 16px;
+    background-color: red;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    margin-top: 10px;
+}
+
+.layout button:hover {
+    background-color: rgb(205, 7, 7);
+    color: rgb(250, 244, 244);
+}
+
+
+.style {
+    margin-top: 7%;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    margin: auto;
+    width: 50%;
+    height: 350px;
+    text-align: center;
+}
+
+.style h1 {
+    font-size: 62px;
+    font-weight: bold;
+}
+
+.style h3 {
+    font-size: 20px;
+}
+
+.style p {
+    font-size: 18px;
+    padding-top: 15px;
+}
+
+input {
+    padding: 20px 95px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 12px;
+    text-align: left;
+    border: 2px solid rgb(50, 50, 50);
+    background-color: transparent;
+}
+
+input:hover {
+    color: white;
+}
+
+p button {
+    padding: 16px 32px;
+    background-color: red;
+    border: none;
+    font-weight: bold;
+    font-size: 22px;
+    color: white;
+    border-radius: 5px;
+}
+
+h1 {
+    color: white;
+}
+
+/* The Slideshow */
+.gallery {
+    width: 100%;
+    position: relative;
+    margin-top: 25px;
+}
+
+.slideshow {
+    margin: auto;
+    max-width: 75rem;
+    overflow: hidden;
+}
+
+.slideshow ul {
+    display: flex;
+    gap: 25px;
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    overflow-y: visible;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    scroll-snap-type: x mandatory;
+    scroll-margin-inline-start: 2.5em;
+}
+
+.slideshow li {
+    display: flex;
+    flex-shrink: 0px;
+}
+
+.slideshow li button {
+    padding: 0px;
+    border: none;
+    position: relative;
+    border-radius: 0.5rem;
+    transition: transform 0.2s ease-in-out;
+}
+
+.slideshow button {
+    scroll-margin-inline-start: 2.3rem;
+    height: 19.5em;
+    width: 17em;
+    padding: 0.3rem 0.625rem;
+}
+
+.image1 {
+    background-image: url('images/img_chania.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.image1 {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    border-radius: 0.5rem;
+    z-index: 1;
+    animation: 400ms infinite linear;
+}
+
+.image2 {
+    background-image: url('images/img_5terre.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.image2 {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    border-radius: 0.5rem;
+    z-index: 0;
+    animation: 400ms infinite linear;
+}
+
+.image3 {
+    background-image: url('images/img_forest.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.image3 {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    border-radius: 0.5rem;
+    z-index: 2;
+    animation: 400ms infinite linear;
+}
+
+.image4 {
+    background-image: url('images/img_lights.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.image4 {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    border-radius: 0.5rem;
+    z-index: 3;
+    animation: 400ms infinite linear;
+}
+
+.image5 {
+    background-image: url('images/img_mountains.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.image5 {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    border-radius: 0.5rem;
+    z-index: 4;
+    animation: 400ms infinite linear;
+}
+
+.image6 {
+    background-image: url('images/img_smallflower.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.image6 {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    border-radius: 0.5rem;
+    z-index: 5;
+    animation: 400ms infinite linear;
+}
+
+.image1-1 {
+    font-size: 5rem;
+    bottom: 0.1rem;
+    left: -0.625rem;
+}
+
+.title {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.title1 {
+    line-height: 1px;
+    display: inline-block;
+    height: 1.5em;
+    left: -12.5px;
+    bottom: 0px;
+    position: absolute;
+    font-weight: 950;
+    color: rgba(0, 0, 0);
+    -webkit-text-stroke: 0.20rem white;
+    text-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.5);
+}
+
+/* column bars */
+.bars{
+    margin: auto;
+    max-width: 75rem;
+    overflow: hidden;
+}
+.bars h1{
+    margin-top: 20px;
+}
+.column {
+    max-width: 100%;
+    display: flex;
+    gap: 25px;
+    padding: 0px 10px;
+    margin: auto;
+}
+
+.border {
+    border-radius: 5px;
+    width: 25%;
+    height: 17pc;
+    background-image: linear-gradient(blue, blueviolet);
+    border-radius: 15px;
+    padding: 0px 12px 0px 13px;
+}
+
+.border h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    padding-top: 15px;
+}
+
+.border p {
+    font-size: 20px;
+    color: rgb(157, 150, 150);
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.drpbtn {
+    margin: auto;
+    max-width: 75rem;
+    overflow: hidden;
+}
+
+.dropdown {
+    padding: 10px;
+    background-color: rgb(74, 72, 72);
+    font-size: 12px;
+    margin-bottom: 8px;
+    width: 100%;
+    border-radius: none;
+    cursor: pointer;
+    display: inline;
+    text-align: left;
+    transition: .06s;
+}
+
+.dropdown button {
+    margin-top: 10px;
+}
+
+.active,
+.dropdown:hover {
+    background-color: rgb(109, 107, 107);
+}
+
+.dropdown:after {
+    content: '\002B';
+    color: rgba(128, 128, 128, 0.8);
+    float: right;
+    margin-left: 10px;
+}
+
+.active::after {
+    content: "\2212";
+}
+
+.dropdowncontent {
+    display: none;
+    padding: 0px 20px;
+    background-color: rgba(128, 128, 128, 0.4);
+    margin-bottom: 20px;
+    color: white;
+    font-size: 25px;
+}
+
+.gallery .style{
+    height: 200px;
+    margin: auto;
+}
+span input {
+    padding: 17px 150px;
+    margin: auto;
+    max-width: 75rem;
+    overflow: hidden;
+}
+
+footer {
+    margin: auto;
+    max-width: 75rem;
+    overflow: hidden;
+}
+
+footer h1{
+    font-size: 20px;
+    display: flex;
+}
+
+footer h1 a {
+    color: rgb(203, 203, 203);
+    padding-left: 10px;
+}
+
+footer .list{
+    align-items: center;
+}
+
+footer .column ul{
+    display: flex;
+    flex-wrap: wrap;
+   list-style-type: none;
+}
+footer .column li{
+    width: 200px;
+    margin: 10px;
+    line-height: 30px;
+    font-size: 20px;
+}
+footer .column li a{
+    text-decoration: underline;
+}
+@media screen and (max-width: 1100px){
+    .layout{
+        width: 100%;
+    }
+    li img{
+        height: 45px;
+    }
+    .form{
+        margin-top: 10%;
+    }
+    .form h1{
+        font-size: 38px;
+    }
+    .slideshow{
+        max-width: 60rem;
+        margin: auto;
+    }
+    .bars{
+        max-width: 60rem;
+        width: auto;
+    }
+    .column{
+        max-width: 100%;
+        flex-wrap: wrap;
+    }
+    .border{
+        width: 48%;
+        height: 200px;
+        align-items: center;
+    }
+    .border h1{
+        font-size: 25px;
+    }
+    .drpbtn{
+        width: 55rem;
+        margin: auto;
+    }
+    .gallery .style{
+    height: 200px;
+    margin-bottom: 100px;
+    }
+    .style span input {
+    padding: 17px 200px;
+    margin: auto;
+    max-width: 85rem;
+}
+}
+/* @media screen and (max-width: 50%){
+    .layout{
+        width: 50%;
+        margin: auto;
+    }
+    .column{
+        margin: auto;
+        border: 2pc solid teal;
+    }
+} */
+/* @media screen and (max-width: 950px){
+    .layout{
+        width: 100%;
+    }
+    li img{
+        height: 38px;
+    }
+    .column{
+        flex-flow: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .border{
+        width: 100%;
+        height: 200px;
+    }
+    .border h1{
+        font-size: 18px;
+    }
+    .border p{
+        justify-content: left;
+    }
+    .drpbtn{
+       width: 85%;
+    }
+    .dropdown h1{
+        font-size: 19px;
+    }
+    .footer .list .column li{
+        display: flex;
+        align-items: center;
+        text-align: left;
+    }
+} */
+/* @media screen and (min-width: 600px){
+    .layout{
+        width: 100%;
+    }
+     li img{
+        height: 38px;
+    }
+    .column{
+        flex-flow: row wrap;
+        margin: 0px 10px;
+    }
+    .border{
+        width: 100%;
+        height: 200px;
+    }
+} */
+/* @media screen and (max-width: 400px) and (min-width: 300px){
+    body{
+        width: 100%;
+    }
+    .layout{
+        width: 100%;
+    }
+    .layout .style{
+        width: 100%;
+    }
+    .layout .style .form{
+        width: 50%;
+    }
+    .layout .style .form h1{
+        padding: 0px 5px 0px 2px;
+        font-size: 30px;
+        text-align: center;
+        border: 2px solid red;
+    }
+    .layout .style .form h3{
+        padding: auto;
+        border: 2px solid red;
+    }
+     li img{
+        height: 38px;
+    }
+    .bars{
+        border: 2px solid teal;
+        width: 100%;
+    }
+    .column{
+        display: flex;
+        flex-flow: row wrap;
+        margin: 0px 10px;
+    }
+    .border{
+        height: 200px;
+        width: 100%;
+        margin: auto;
+    }
+    .border h1{
+        font-size: 20px;
+    }
+    .drpbtn{
+        width: 80%;
+        border: 2px thick teal;
+    }
+    .dropdown{
+        width: 100%;
+    }
+    .dropdown h1{
+        font-size: 18px;
+    }
+} */
